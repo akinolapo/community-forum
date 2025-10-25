@@ -1,26 +1,175 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.menu-link{
+  display: flex;
+  width: 147px;
+  padding: 8px 0 12px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  font-weight: 600;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Category Card Backgrounds */
+
+/* Mobile App Development - Blue/Teal theme */
+.category-mobile-dev {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+  position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.category-mobile-dev::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* UI/UX Design - Purple theme */
+.category-uiux {
+  background: linear-gradient(135deg, #4c1d95 0%, #1e1b4b 100%);
+  position: relative;
+}
+
+.category-uiux::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Programming & Tech - Dark Blue theme */
+.category-programming {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  position: relative;
+}
+
+.category-programming::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Social Media Design & Management - Teal/Green theme */
+.category-social-media {
+  background: linear-gradient(135deg, #134e4a 0%, #064e3b 100%);
+  position: relative;
+}
+
+.category-social-media::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Graphics Design - Dark Purple/Maroon theme */
+.category-graphics {
+  background: linear-gradient(135deg, #4c0519 0%, #1e1b4b 100%);
+  position: relative;
+}
+
+.category-graphics::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(219, 39, 119, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Video Editing & Animation - Blue theme */
+.category-video {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0c4a6e 100%);
+  position: relative;
+}
+
+.category-video::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.35) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Illustration & Digital Art - Dark with Orange accents */
+.category-illustration {
+  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+  position: relative;
+}
+
+.category-illustration::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(251, 146, 60, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Presentation Design - Teal/Dark theme */
+.category-presentation {
+  background: linear-gradient(135deg, #134e4a 0%, #0f172a 100%);
+  position: relative;
+}
+
+.category-presentation::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Web Development - Purple/Blue theme */
+.category-web-dev {
+  background: linear-gradient(135deg, #312e81 0%, #1e3a5f 100%);
+  position: relative;
+}
+
+.category-web-dev::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.35) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Category Pattern - Optional decorative pattern */
+.category-pattern {
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.02) 10px, rgba(255,255,255,.02) 20px);
 }
