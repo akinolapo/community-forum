@@ -77,7 +77,7 @@ export default function FeaturedTalk() {
 
   return (
     <section className="bg-white py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex items-start justify-between mb-8">
           <div>
@@ -129,15 +129,15 @@ export default function FeaturedTalk() {
               </p>
 
               {/* Author and Stats */}
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 {/* Author Info */}
                 <div className="flex items-center gap-3">
                   <Image 
                     src={discussion.author.avatar} 
                     alt={discussion.author.name}
+                    className="w-10 h-10 rounded-full object-cover"
                     width={40}
                     height={40}
-                    className="w-10 h-10 rounded-full object-cover"
                   />
                   <div>
                     <p className="text-sm font-semibold text-gray-900">
@@ -150,7 +150,7 @@ export default function FeaturedTalk() {
                 </div>
 
                 {/* Stats */}
-                <div className="flex items-center gap-4 text-sm text-gray-500">
+                <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-500">
                   {/* Views */}
                   <div className="flex items-center gap-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
